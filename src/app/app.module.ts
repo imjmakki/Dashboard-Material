@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 //Material
 import { MatSliderModule } from '@angular/material/slider';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 //Components
 import { LoginComponent } from './access/login/login.component';
@@ -24,13 +26,15 @@ import { MainComponent } from './layout/main/main.component';
     DashboardComponent,
     ReportComponent,
     UserComponent,
-    MainComponent
+    MainComponent,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatSliderModule
+    MatSliderModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
