@@ -5,3 +5,8 @@
   align-items: center;
   background-color: #f5f5f5;
 }
+
+.login{
+  width: 100%;
+  max-width: 330px;
+}
