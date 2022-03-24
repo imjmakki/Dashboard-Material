@@ -7,6 +7,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 //Material
 import { MatSliderModule } from '@angular/material/slider';
+
+//Components
 import { LoginComponent } from './access/login/login.component';
 import { RegisterComponent } from './access/register/register.component';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
