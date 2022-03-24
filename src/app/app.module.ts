@@ -7,10 +7,22 @@ import { AppRoutingModule } from './app-routing.module';
 
 //Material
 import { MatSliderModule } from '@angular/material/slider';
+import { LoginComponent } from './access/login/login.component';
+import { RegisterComponent } from './access/register/register.component';
+import { DashboardComponent } from './layout/dashboard/dashboard.component';
+import { ReportComponent } from './layout/report/report.component';
+import { UserComponent } from './layout/user/user.component';
+import { MainComponent } from './layout/main/main.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    RegisterComponent,
+    DashboardComponent,
+    ReportComponent,
+    UserComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
