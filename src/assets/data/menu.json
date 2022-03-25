@@ -1,14 +1,14 @@
 [
   {
     "number": "Dashboard",
-    "redirect": ""
+    "redirect": "/dashboard"
   },
   {
     "number": "Users",
-    "redirect": ""
+    "redirect": "/dashboard/users"
   },
   {
     "number": "Reports",
-    "redirect": ""
+    "redirect": "/dashboard/reports"
   }
 ]
