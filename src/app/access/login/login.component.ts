@@ -30,6 +30,7 @@ export class LoginComponent implements OnInit {
       this.fakeLoading();
     } else {
       this.error();
+      this.form.reset();
     }
   }
 
@@ -45,6 +46,7 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     setTimeout(()=>{
 
+      this.loading = false;
     }, 1500);
   }
 }
