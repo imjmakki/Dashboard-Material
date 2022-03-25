@@ -7,4 +7,8 @@ import {HttpClient} from "@angular/common/http";
 export class MenuService {
 
   constructor(private http: HttpClient) { }
+
+  getMenu() {
+
+  }
 }
