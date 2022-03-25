@@ -30,7 +30,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
