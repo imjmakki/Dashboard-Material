@@ -36,7 +36,7 @@ export class CreateUserComponent implements OnInit {
       surname: this.form.value.surname,
       gender: this.form.value.gender,
     }
-
     this._userService.addUser(user);
+    this.router.navigate(['/dashboard/users']);
   }
 }
