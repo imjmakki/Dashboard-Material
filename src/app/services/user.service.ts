@@ -17,7 +17,7 @@ export class UserService {
     return this.listUsers.slice();
   }
 
-  deleteUser() {
-
+  deleteUser(index: number) {
+    this.listUsers.splice(index, 1);
   }
 }
