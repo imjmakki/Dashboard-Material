@@ -33,6 +33,6 @@ export class LoginComponent implements OnInit {
   }
 
   error() {
-
+    this._snackBar.open('Access Denied')
   }
 }
