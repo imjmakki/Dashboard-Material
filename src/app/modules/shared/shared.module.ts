@@ -18,6 +18,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import {MatSortModule} from '@angular/material/sort';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
+    MatCardModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
@@ -52,6 +54,7 @@ import {MatSortModule} from '@angular/material/sort';
     MatTooltipModule,
     MatPaginatorModule,
     MatSortModule,
+    MatCardModule,
     ReactiveFormsModule,
     HttpClientModule
   ]
