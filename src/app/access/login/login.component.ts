@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
     this._snackBar.open('Access Denied', '', {
       duration: 5000,
       horizontalPosition: 'center',
-      verticalPosition: 'top'
+      verticalPosition: 'top',
     });
   }
 }
