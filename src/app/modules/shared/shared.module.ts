@@ -20,6 +20,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -39,6 +40,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSortModule,
     MatCardModule,
     MatGridListModule,
+    MatSelectModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
@@ -57,6 +59,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
     MatSortModule,
     MatCardModule,
     MatGridListModule,
+    MatSelectModule,
     ReactiveFormsModule,
     HttpClientModule
   ]
