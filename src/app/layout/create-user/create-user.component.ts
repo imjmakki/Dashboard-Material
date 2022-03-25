@@ -33,5 +33,7 @@ export class CreateUserComponent implements OnInit {
       surname: this.form.value.surname,
       gender: this.form.value.gender,
     }
+
+    console.log(user);
   }
 }
