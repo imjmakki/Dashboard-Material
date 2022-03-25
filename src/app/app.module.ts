@@ -12,6 +12,7 @@ import { DashboardComponent } from './layout/dashboard/dashboard.component';
 import { ReportComponent } from './layout/report/report.component';
 import { UserComponent } from './layout/user/user.component';
 import { MainComponent } from './layout/main/main.component';
+import {SharedModule} from "./modules/shared/shared.module";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { MainComponent } from './layout/main/main.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]
