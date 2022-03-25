@@ -45,6 +45,6 @@ export class LoginComponent implements OnInit {
     this.loading = true;
     setTimeout(()=>{
 
-    }, );
+    }, 1500);
   }
 }
