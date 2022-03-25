@@ -12,7 +12,7 @@ const listUsers: User[] = [
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  displayedColumns: string[] = ['user', 'name', 'surname', 'gender'];
+  displayedColumns: string[] = ['user', 'name', 'surname', 'gender', 'action'];
   dataSource = listUsers;
 
   constructor() { }
