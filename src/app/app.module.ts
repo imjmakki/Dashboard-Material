@@ -4,15 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
-import {ReactiveFormsModule} from "@angular/forms";
-
-//Material
-import { MatSliderModule } from '@angular/material/slider';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
-import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 //Components
 import { LoginComponent } from './access/login/login.component';
