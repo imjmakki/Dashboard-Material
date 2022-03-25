@@ -36,6 +36,6 @@ export class CreateUserComponent implements OnInit {
       gender: this.form.value.gender,
     }
 
-    console.log(user);
+    this._userService.addUser(user);
   }
 }
