@@ -36,13 +36,6 @@ import { MainComponent } from './layout/main/main.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MatSliderModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatButtonModule,
-    MatSnackBarModule,
-    MatProgressSpinnerModule,
-    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
