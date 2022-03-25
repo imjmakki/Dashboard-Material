@@ -46,5 +46,11 @@ export class UserComponent implements OnInit {
   deleteUser(index: number) {
     this._userService.deleteUser(index);
     this.chargeUser();
+
+    this._snackBar.open('Access Denied', '', {
+      duration: 5000,
+      horizontalPosition: 'center',
+      verticalPosition: 'top',
+    });
   }
 }
