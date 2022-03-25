@@ -27,7 +27,6 @@ export class CreateUserComponent implements OnInit {
   }
 
   addUser() {
-    console.log(this.form);
 
     const user: User = {
       user: this.form.value.user,
