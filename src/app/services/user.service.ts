@@ -22,6 +22,6 @@ export class UserService {
   }
 
   addUser(user: User) {
-    this.listUsers.unshift();
+    this.listUsers.unshift(user);
   }
 }

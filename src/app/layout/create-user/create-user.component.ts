@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {User} from "../../interfaces/user";
+import {UserService} from "../../services/user.service";
 
 @Component({
   selector: 'app-create-user',
@@ -12,7 +13,8 @@ export class CreateUserComponent implements OnInit {
   gender: any[] = ['Male', 'Female'];
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder,
+              _userService: UserService) {
     this.form = this.formBuilder.group({
       user: ['', Validators.required],
       name: ['', Validators.required],
