@@ -42,7 +42,7 @@ export class UserComponent implements OnInit {
   }
 
   deleteUser(index: number) {
-    console.log(index);
     this._userService.deleteUser(index);
+    this.chargeUser();
   }
 }
