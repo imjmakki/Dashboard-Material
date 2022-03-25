@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from "../../interfaces/user";
 
-const ELEMENT_DATA: User[] = [
+const listUsers: User[] = [
   {user: '07502078246', name: 'Mj', surname: 'Al-Anbaki', gender: 'Male'},
   {user: '07802263519', name: 'Mohamad', surname: 'Makki', gender: 'Male'},
 ];
@@ -13,7 +13,7 @@ const ELEMENT_DATA: User[] = [
 })
 export class UserComponent implements OnInit {
   displayedColumns: string[] = ['user', 'name', 'surname', 'gender'];
-  dataSource = ELEMENT_DATA;
+  dataSource = listUsers;
 
   constructor() { }
 
