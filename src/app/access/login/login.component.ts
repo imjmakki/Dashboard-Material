@@ -9,6 +9,7 @@ import {MatSnackBar} from "@angular/material/snack-bar";
 })
 export class LoginComponent implements OnInit {
   form: FormGroup;
+  loading = false;
 
   constructor(private formBuilder: FormBuilder,
               private _snackBar: MatSnackBar) {
