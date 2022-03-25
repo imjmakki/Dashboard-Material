@@ -23,6 +23,12 @@ export class UserComponent implements OnInit {
   constructor(private _userService: UserService) { }
 
   ngOnInit(): void {
+    this.chargeUser();
+  }
+
+  chargeUser() {
+    this.listUsers = this._userService.getUser();
+    this.dataSource = new MatTableDataSource(this.listUsers);
   }
 
   ngAfterViewInit() {
@@ -33,5 +39,9 @@ export class UserComponent implements OnInit {
   applyFilter(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
+
+  deleteUser() {
+    
   }
 }
