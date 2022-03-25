@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-create-user',
@@ -11,7 +11,14 @@ export class CreateUserComponent implements OnInit {
   gender: any[] = ['Male', 'Female'];
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {
+    this.form = this.formBuilder.group({
+      user: ['', Validators.required],
+      name: ['', Validators.required],
+      surname: ['', Validators.required],
+      gender: ['', Validators.required],
+    });
+  }
 
   ngOnInit(): void {
   }
