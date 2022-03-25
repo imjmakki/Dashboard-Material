@@ -9,7 +9,7 @@
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <mat-form-field class="width">
             <mat-label>User</mat-label>
-            <input matInput autocomplete="off">
+            <input matInput autocomplete="off" formControlName="user">
           </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="3" [rowspan]="5">
@@ -18,19 +18,19 @@
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <mat-form-field class="width">
             <mat-label>Name</mat-label>
-            <input matInput autocomplete="off">
+            <input matInput autocomplete="off" formControlName="name">
           </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <mat-form-field class="width">
             <mat-label>Surname</mat-label>
-            <input matInput autocomplete="off">
+            <input matInput autocomplete="off" formControlName="surname">
           </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <mat-form-field class="width">
             <mat-label>Gender</mat-label>
-            <mat-select>
+            <mat-select formControlName="gender">
               <mat-option *ngFor="let type of gender" [value]="type">
                 {{type}}
               </mat-option>
