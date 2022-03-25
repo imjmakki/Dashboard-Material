@@ -2,9 +2,7 @@
   <span>Dashboard</span>
 
   <span class="example-spacer"></span>
-  <button mat-button routerLink="/dashboard">Main</button>
-  <button mat-button routerLink="/dashboard/users">Users</button>
-  <button mat-button routerLink="/dashboard/reports">Reports</button>
+  <button mat-button *ngFor="let item of menu" routerLink="/dashboard">Main</button>
   <span class="example-spacer"></span>
 
   <button routerLink="/logout" mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
