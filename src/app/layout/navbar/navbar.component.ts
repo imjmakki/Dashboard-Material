@@ -14,6 +14,10 @@ export class NavbarComponent implements OnInit {
   }
 
   chargeMenu() {
-    this._menuService.getMenu().subscribe();
+    this._menuService.getMenu().subscribe(
+      data => {
+        console.log(data);
+      }
+    );
   }
 }
