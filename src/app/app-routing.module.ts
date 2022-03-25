@@ -5,7 +5,7 @@ import {LoginComponent} from "./access/login/login.component";
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
-  { path: 'dashboard', loadChildren: () => import('./modules/dashboard/dashboard.module') },
+  { path: 'dashboard', loadChildren: () => import('./modules/dashboard/dashboard.module').then(x => x.DashboardModule) },
   { path: "**", redirectTo: 'login', pathMatch: 'full' }
 ];
 
