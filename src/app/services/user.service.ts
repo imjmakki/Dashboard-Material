@@ -21,7 +21,7 @@ export class UserService {
     this.listUsers.splice(index, 1);
   }
 
-  addUser() {
+  addUser(user: User) {
     this.listUsers.unshift();
   }
 }
