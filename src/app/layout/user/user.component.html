@@ -3,6 +3,12 @@
     <span>Users</span>
   </mat-toolbar>
 
+  <!-- Filtering the data -->
+  <mat-form-field appearance="standard">
+    <mat-label>Filter</mat-label>
+    <input matInput (keyup)="applyFilter($event)" placeholder="Ex. Mia" #input>
+  </mat-form-field>
+
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z0">
 
     <!-- User Column -->
