@@ -14,6 +14,7 @@ import {MatSnackBarModule} from "@angular/material/snack-bar";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from "@angular/material/icon";
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import {MatIconModule} from "@angular/material/icon";
     MatProgressSpinnerModule,
     MatToolbarModule,
     MatIconModule,
+    MatTabsModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
@@ -40,6 +42,7 @@ import {MatIconModule} from "@angular/material/icon";
     MatProgressSpinnerModule,
     MatToolbarModule,
     MatIconModule,
+    MatTabsModule,
     ReactiveFormsModule,
     HttpClientModule
   ]
