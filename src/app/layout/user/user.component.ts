@@ -14,7 +14,7 @@ export class UserComponent implements OnInit {
   listUsers: User[] = [];
 
   displayedColumns: string[] = ['user', 'name', 'surname', 'gender', 'action'];
-  dataSource = new MatTableDataSource(this.listUsers);
+  dataSource!: MatTableDataSource<any>;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
   @ViewChild(MatSort) sort!: MatSort;
