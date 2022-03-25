@@ -1,6 +1,6 @@
 <div class="body">
   <div class="login">
-    <form [formGroup]="form">
+    <form [formGroup]="form" (ngSubmit)="login()">
       <img src="../../../assets/img/user.png" width="50%" />
       <h1>Login</h1>
       <mat-form-field class="width" appearance="fill">
