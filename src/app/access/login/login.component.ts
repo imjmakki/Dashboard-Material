@@ -21,5 +21,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     console.log(this.form);
+    const phone = this.form.value.phone;
+    const password = this.form.value.password;
   }
 }
