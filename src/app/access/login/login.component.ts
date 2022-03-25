@@ -28,11 +28,15 @@ export class LoginComponent implements OnInit {
     if(phone == '07502078246' && password == '12345') {
 
     } else {
-
+      this.error();
     }
   }
 
   error() {
-    this._snackBar.open('Access Denied')
+    this._snackBar.open('Access Denied', '', {
+      duration: 5000,
+      horizontalPosition: 'center',
+      verticalPosition: 'top'
+    });
   }
 }
