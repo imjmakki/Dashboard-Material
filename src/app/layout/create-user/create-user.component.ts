@@ -14,7 +14,7 @@ export class CreateUserComponent implements OnInit {
   form: FormGroup;
 
   constructor(private formBuilder: FormBuilder,
-              _userService: UserService) {
+              private _userService: UserService) {
     this.form = this.formBuilder.group({
       user: ['', Validators.required],
       name: ['', Validators.required],
