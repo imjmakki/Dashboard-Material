@@ -3,6 +3,7 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {User} from "../../interfaces/user";
 import {UserService} from "../../services/user.service";
 import {Router} from "@angular/router";
+import {MatSnackBar} from "@angular/material/snack-bar";
 
 @Component({
   selector: 'app-create-user',
@@ -16,7 +17,8 @@ export class CreateUserComponent implements OnInit {
 
   constructor(private formBuilder: FormBuilder,
               private _userService: UserService,
-              private router: Router) {
+              private router: Router,
+              private _snackBar: MatSnackBar) {
     this.form = this.formBuilder.group({
       user: ['', Validators.required],
       name: ['', Validators.required],
