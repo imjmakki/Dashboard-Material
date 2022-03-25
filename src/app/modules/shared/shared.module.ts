@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-//Forms
+//Modules
 import {ReactiveFormsModule} from "@angular/forms";
 
 //Material
