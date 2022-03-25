@@ -31,7 +31,6 @@ export class CreateUserComponent implements OnInit {
   }
 
   addUser() {
-
     const user: User = {
       user: this.form.value.user,
       name: this.form.value.name,
@@ -40,5 +39,11 @@ export class CreateUserComponent implements OnInit {
     }
     this._userService.addUser(user);
     this.router.navigate(['/dashboard/users']);
+
+    this._snackBar.open('The user has been added successfully', '', {
+      duration: 5000,
+      horizontalPosition: 'center',
+      verticalPosition: 'top',
+    });
   }
 }
