@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {User} from "../../interfaces/user";
 
 const ELEMENT_DATA: User[] = [
-  {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
+  {user: '07502078246', name: 'Mj', surname: 'Al-Anbaki', gender: 'Male'},
 ];
 
 @Component({
