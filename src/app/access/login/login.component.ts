@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     const password = this.form.value.password;
 
     if(phone == '07502078246' && password == '12345') {
-
+      this.fakeLoading();
     } else {
       this.error();
     }
@@ -42,6 +42,8 @@ export class LoginComponent implements OnInit {
   }
 
   fakeLoading() {
+    setTimeout(()=>{
 
+    }, );
   }
 }
