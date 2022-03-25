@@ -30,7 +30,11 @@
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <mat-form-field class="width">
             <mat-label>Gender</mat-label>
-            <input matInput>
+            <mat-select>
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
           </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="1" [rowspan]="1">
