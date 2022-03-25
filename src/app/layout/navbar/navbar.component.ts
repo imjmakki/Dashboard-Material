@@ -11,6 +11,7 @@ export class NavbarComponent implements OnInit {
   constructor(private _menuService: MenuService) { }
 
   ngOnInit(): void {
+    this.chargeMenu();
   }
 
   chargeMenu() {
