@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from "../../interfaces/user";
-
-const listUsers: User[] = [
-  {user: '07502078246', name: 'Mj', surname: 'Al-Anbaki', gender: 'Male'},
-  {user: '07802263519', name: 'Mohamad', surname: 'Makki', gender: 'Male'},
-];
+import {MatTableDataSource} from "@angular/material/table";
 
 @Component({
   selector: 'app-user',
@@ -12,8 +8,14 @@ const listUsers: User[] = [
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
+
+  listUsers: User[] = [
+    {user: '07502078246', name: 'Mj', surname: 'Al-Anbaki', gender: 'Male'},
+    {user: '07802263519', name: 'Mohamad', surname: 'Makki', gender: 'Male'},
+  ];
+
   displayedColumns: string[] = ['user', 'name', 'surname', 'gender', 'action'];
-  dataSource = listUsers;
+  dataSource = new MatTableDataSource(this.listUsers);
 
   constructor() { }
 
