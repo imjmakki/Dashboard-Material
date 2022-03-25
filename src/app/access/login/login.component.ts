@@ -23,7 +23,10 @@ export class LoginComponent implements OnInit {
     const phone = this.form.value.phone;
     const password = this.form.value.password;
 
-    console.log(phone);
-    console.log(password);
+    if(phone == '07502078246' && password == '12345') {
+
+    } else {
+
+    }
   }
 }
