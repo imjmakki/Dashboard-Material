@@ -13,6 +13,7 @@ import { ReportComponent } from './layout/report/report.component';
 import { UserComponent } from './layout/user/user.component';
 import { MainComponent } from './layout/main/main.component';
 import {SharedModule} from "./modules/shared/shared.module";
+import { NavbarComponent } from './layout/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import {SharedModule} from "./modules/shared/shared.module";
     ReportComponent,
     UserComponent,
     MainComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
