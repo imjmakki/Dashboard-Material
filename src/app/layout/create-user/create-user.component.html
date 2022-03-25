@@ -31,8 +31,8 @@
           <mat-form-field class="width">
             <mat-label>Gender</mat-label>
             <mat-select>
-              <mat-option *ngFor="let type of gender" [value]="type.value">
-                {{type.viewValue}}
+              <mat-option *ngFor="let type of gender" [value]="type">
+                {{type}}
               </mat-option>
             </mat-select>
           </mat-form-field>

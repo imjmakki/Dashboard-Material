@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateUserComponent implements OnInit {
 
-  gender: any[] = [
-    {value: 'male', viewValue: 'Male'},
-    {value: 'female', viewValue: 'Female'},
-  ];
+  gender: any[] = ['Male', 'Female'];
 
   constructor() { }
 
