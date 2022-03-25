@@ -47,8 +47,7 @@ export class LoginComponent implements OnInit {
   fakeLoading() {
     this.loading = true;
     setTimeout(()=>{
-
-      this.loading = false;
+      this.router.navigate(['dashboard'])
     }, 1500);
   }
 }
