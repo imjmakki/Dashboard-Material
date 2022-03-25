@@ -20,4 +20,8 @@ export class UserComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  applyFilter(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    this.dataSource.filter = filterValue.trim().toLowerCase();
+  }
 }
