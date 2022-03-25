@@ -4,7 +4,7 @@
   </mat-toolbar>
 
   <mat-card style="margin-top: 10px;">
-    <form [formGroup]="form">
+    <form [formGroup]="form" (ngSubmit)="addUser()">
       <mat-grid-list cols="4" rowHeight="70px">
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <mat-form-field class="width">
@@ -39,7 +39,7 @@
         </mat-grid-tile>
         <mat-grid-tile [colspan]="1" [rowspan]="1">
           <button mat-raised-button style="margin-right: 20px;">Cancel</button>
-          <button mat-raised-button color="primary">Save</button>
+          <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Save</button>
         </mat-grid-tile>
       </mat-grid-list>
     </form>
