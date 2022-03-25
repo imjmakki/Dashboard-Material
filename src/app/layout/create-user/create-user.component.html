@@ -6,8 +6,11 @@
   <mat-card style="margin-top: 10px;">
     <form>
       <mat-grid-list cols="4" rowHeight="70px">
-        <mat-grid-tile [colspan]="1" [rowspan]="1" [style.background]="'lightblue'">
-          User
+        <mat-grid-tile [colspan]="1" [rowspan]="1">
+          <mat-form-field class="width">
+            <mat-label>User</mat-label>
+            <input type="text" matInput autocomplete="off" formControlName="phone">
+          </mat-form-field>
         </mat-grid-tile>
         <mat-grid-tile [colspan]="3" [rowspan]="5" [style.background]="'lightblue'">
           Image
