@@ -14,6 +14,7 @@ import { UserComponent } from './layout/user/user.component';
 import { MainComponent } from './layout/main/main.component';
 import {SharedModule} from "./modules/shared/shared.module";
 import { NavbarComponent } from './layout/navbar/navbar.component';
+import { CreateUserComponent } from './layout/create-user/create-user.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
     UserComponent,
     MainComponent,
     NavbarComponent,
+    CreateUserComponent,
   ],
   imports: [
     BrowserModule,
