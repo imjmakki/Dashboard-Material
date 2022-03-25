@@ -11,6 +11,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 //Components
 import { LoginComponent } from './access/login/login.component';
@@ -38,6 +39,7 @@ import { MainComponent } from './layout/main/main.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
+    MatSnackBarModule,
     ReactiveFormsModule
   ],
   providers: [],
