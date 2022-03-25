@@ -12,7 +12,7 @@
         <input type="password" matInput autocomplete="off" formControlName="password">
       </mat-form-field>
       <br />
-      <button type="submit" class="width button" mat-raised-button color="primary">Log In</button>
+      <button type="submit" class="width button" mat-raised-button color="primary" [disabled]="form.invalid">Log In</button>
     </form>
   </div>
 </div>
