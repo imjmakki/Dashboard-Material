@@ -12,4 +12,8 @@ export class UserService {
   ];
 
   constructor() { }
+
+  getUser() {
+    return this.listUsers.slice();
+  }
 }
