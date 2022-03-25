@@ -41,7 +41,7 @@ export class UserComponent implements OnInit {
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 
-  deleteUser() {
-    
+  deleteUser(index: number) {
+    console.log(index);
   }
 }

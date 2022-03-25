@@ -16,4 +16,8 @@ export class UserService {
   getUser() {
     return this.listUsers.slice();
   }
+
+  deleteUser() {
+
+  }
 }
